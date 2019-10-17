@@ -83,7 +83,10 @@ public class LZ78 {
     }
 
     public static void main(String[] args) throws IOException {
-        Compression("ABAABABAABABBBBBBBBBBA");
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        Compression(input);
+        System.out.println("\n");
         Decompression();
     }
 }
